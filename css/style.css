@@ -1,0 +1,74 @@
+/* alt transition: all cubic-bezier(.62,.28,.23,.99) 0.7s; */
+/* bar: #212121, height: 64px */
+/* translucent: 20% #000000 */
+body {
+	background-color: #303030;
+	margin: 0px;
+}
+.adafruit { background-color: #00a7e9; }
+.archlinux { background-color: #1793d1; }
+.arduino { background-color: #00979c; }
+.distrowatch { background-color: #840300; }
+.feedly { background-color: #2bb24c; }
+.github { background-color: #171515; }
+.hackaday { background-color: #1a1a1a; }
+.kusc { background-color: #970000; }
+.raspberrypi { background-color: #bc1142; }
+.reddit { background-color: #336699; }
+.tile-container {
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 8px;
+}
+.tile {
+	width: 200px;
+	height: 200px;
+	border-radius: 2px;
+	text-align: center;
+	margin: 8px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	position: relative;
+	overflow: hidden;
+}
+.tile:hover {
+	transition: 0.2s ease-in-out;
+	transition-delay: 0s;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.tile > a {
+	width: inherit;
+	height: inherit;
+	display: block;
+}
+.logo {
+	height: 100px;
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+/* ripply stuff for clicks */
+.ink {
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 100%;
+	transform: scale(0);
+}
+.animate {
+	animation: ripple 0.3s linear;
+}
+@keyframes ripple {
+	100% {opacity: 0; transform: scale(2.5);}
+}
+/* hierarchical loading */
+.tile-container > * {
+  transform: scale(0);
+}
+.tile-container > .animated {
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
