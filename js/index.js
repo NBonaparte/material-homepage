@@ -26,7 +26,7 @@ function hierarchyload() {
 
 function ink(){
 	var ink, d, x, y;
-	$(".tile").click(function(e){
+	$(".tile").mousedown(function(e){
     if($(this).find(".ink").length === 0){
         $(this).prepend("<span class='ink'></span>");
     }
