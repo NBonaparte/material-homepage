@@ -9,12 +9,15 @@ body {
 .archlinux { background-color: #1793d1; }
 .arduino { background-color: #00979c; }
 .distrowatch { background-color: #840300; }
+.espnfc { background-color: #1eb848; }
 .feedly { background-color: #2bb24c; }
 .github { background-color: #171515; }
 .hackaday { background-color: #1a1a1a; }
-.kusc { background-color: #970000; }
+.kusc { background-color: #990000; }
+.lichess { background-color: #1a1a1a; }
 .raspberrypi { background-color: #bc1142; }
 .reddit { background-color: #336699; }
+.vimawesome { background-color: #2aa198; }
 .tile-container {
 	height: 100%;
 	display: flex;
@@ -66,9 +69,9 @@ body {
 }
 /* hierarchical loading */
 .tile-container > * {
-  transform: scale(0);
+	transform: scale(0);
 }
 .tile-container > .animated {
-  transform: scale(1);
-  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+	transform: scale(1);
+	transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
