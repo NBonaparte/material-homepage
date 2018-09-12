@@ -10,9 +10,9 @@ body {
 .arduino { background-color: #00979c; }
 .distrowatch { background-color: #840300; }
 .espnfc { background-color: #1eb848; }
-.feedly { background-color: #2bb24c; }
 .github { background-color: #171515; }
 .hackaday { background-color: #1a1a1a; }
+.hackernews { background-color: #fb651e; }
 .kusc { background-color: #990000; }
 .lichess { background-color: #1a1a1a; }
 .octopart { background-color: #3472bc; }
@@ -20,7 +20,6 @@ body {
 .reddit { background-color: #336699; }
 .rust { background-color: #ffffff; }
 .unsplash { background-color: #111111; }
-.vimawesome { background-color: #2aa198; }
 .tile-container {
 	height: 100%;
 	display: flex;
